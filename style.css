@@ -8,13 +8,8 @@
   src: url(./src/Norse-Bold.otf);
 }
 
-html {
-  /* height: 100%; */
-}
-
 body {
   background-color: lightgray;
-  /* min-height: 100%; */
 }
 
 main {
@@ -67,14 +62,57 @@ main {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 #hero-section #hero-text {
-  padding: 50px;
-  margin-top: 80px;
+  padding: 60px;
   font-size: 30px;
 }
 
 #hero-section #hero-text p {
   padding: 10px;
+  font-weight: bold;
+}
+
+#hero-section #hero-form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px;
+  background-color: whitesmoke;
+}
+
+#hero-section #hero-form .hero-input {
+  flex-basis: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+#hero-section #hero-form .hero-input input {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2.5px 2.5px #e5e7eb;
+}
+
+#hero-section #hero-form .hero-input input:valid {
+  border: 1px solid lightgreen;
+  box-shadow: 2.5px 2.5px lightgreen;
+}
+
+#hero-section #hero-form .hero-input input:invalid {
+  border: 1px solid rgb(238, 73, 73);
+  box-shadow: 2.5px 2.5px rgb(238, 73, 73);
+}
+
+#hero-section #hero-buttons {
+  padding: 100px;
+}
+
+#hero-section #hero-buttons button {
+  padding: 15px;
+  font-size: 20px;
+  background-color: #596d48;
+  border-radius: 10px;
+  box-shadow: 2px 2px #596d48;
 }
